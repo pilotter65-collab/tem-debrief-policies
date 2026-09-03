@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — TEM Debrief</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap">
+<style>
+  :root {
+    --bg: #0a1628; --bg-raised: #0f2038; --ink: #e8eef5;
+    --ink-soft: #a9bdd4; --ink-faint: #6d84a0;
+    --accent: #5fd0ff; --accent-dim: rgba(95, 208, 255, 0.35);
+    --rule: rgba(140, 180, 220, 0.16);
+  }
+  @media (prefers-color-scheme: light) {
+    :root:not([data-theme="dark"]) {
+      --bg: #f4f7fb; --bg-raised: #ffffff; --ink: #10233f;
+      --ink-soft: #3d5670; --ink-faint: #7488a0;
+      --accent: #0d84b8; --accent-dim: rgba(13, 132, 184, 0.25);
+      --rule: rgba(20, 50, 90, 0.14);
+    }
+  }
+  :root[data-theme="light"] {
+    --bg: #f4f7fb; --bg-raised: #ffffff; --ink: #10233f;
+    --ink-soft: #3d5670; --ink-faint: #7488a0;
+    --accent: #0d84b8; --accent-dim: rgba(13, 132, 184, 0.25);
+    --rule: rgba(20, 50, 90, 0.14);
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: "Source Serif 4", Georgia, serif; font-size: 17px; line-height: 1.65; }
+  .topbar {
+    position: sticky; top: 0; z-index: 10;
+    display: flex; align-items: center; gap: 24px;
+    padding: 16px 32px;
+    background: color-mix(in srgb, var(--bg) 88%, transparent);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--rule);
+    font-family: "JetBrains Mono", monospace; font-size: 12px;
+    letter-spacing: 0.08em; text-transform: uppercase;
+  }
+  .topbar .mark { color: var(--accent); font-weight: 600; }
+  .topbar a { color: var(--ink-soft); text-decoration: none; padding: 4px 0; border-bottom: 1px solid transparent; }
+  .topbar a:hover, .topbar a:focus-visible { color: var(--ink); border-bottom-color: var(--accent); }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 32px 120px; }
+  .eyebrow {
+    font-family: "JetBrains Mono", monospace; font-size: 12px; letter-spacing: 0.14em;
+    text-transform: uppercase; color: var(--accent);
+    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  }
+  .eyebrow::before { content: ""; width: 22px; height: 1px; background: var(--accent-dim); }
+  h1 {
+    font-family: "Fraunces", Georgia, serif; font-optical-sizing: auto; font-weight: 600;
+    font-size: clamp(2.4rem, 5vw, 3.4rem); line-height: 1.05; letter-spacing: -0.01em;
+    margin: 0 0 8px; text-wrap: balance;
+  }
+  .dek { font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--ink-faint); margin: 0 0 48px; }
+  h2 { font-family: "Fraunces", Georgia, serif; font-weight: 600; font-size: 1.35rem; margin: 44px 0 4px; color: var(--ink); }
+  h2 .num { font-family: "JetBrains Mono", monospace; font-size: 0.7em; color: var(--accent); margin-right: 12px; font-weight: 500; }
+  p { color: var(--ink-soft); margin: 14px 0; max-width: 62ch; }
+  strong { color: var(--ink); font-weight: 600; }
+  ul { margin: 14px 0; padding-left: 0; list-style: none; max-width: 62ch; }
+  li { color: var(--ink-soft); padding-left: 22px; position: relative; margin: 8px 0; }
+  li::before { content: ""; position: absolute; left: 2px; top: 10px; width: 6px; height: 1px; background: var(--accent); }
+  .meta-block {
+    margin-top: 56px; padding: 20px 24px; background: var(--bg-raised);
+    border: 1px solid var(--rule); border-radius: 3px;
+    font-family: "JetBrains Mono", monospace; font-size: 13px; color: var(--ink-faint);
+    display: flex; flex-wrap: wrap; gap: 8px 28px;
+  }
+  .meta-block b { color: var(--ink-soft); font-weight: 500; }
+  .meta-block a { color: var(--accent); text-decoration: none; }
+  .meta-block a:hover { text-decoration: underline; }
+  footer { max-width: 760px; margin: 0 auto; padding: 0 32px 60px; font-family: "JetBrains Mono", monospace; font-size: 12px; color: var(--ink-faint); }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="mark">TEM DEBRIEF</span>
+  <a href="terms.html">Terms of Service</a>
+  <a href="privacy.html">Privacy Policy</a>
+</div>
+<main>
+  <div class="eyebrow">Document 02</div>
+  <h1>Privacy Policy</h1>
+  <p class="dek">Effective 2026-09-03 &middot; TEM Debrief Publisher</p>
+
+  <h2><span class="num">2.1</span>What is collected</h2>
+  <p>This application collects and stores only its own operator's authentication credentials (OAuth access and refresh tokens) issued directly by YouTube, TikTok, Instagram, and Bilibili. These tokens exist solely to authorize the application to publish content to the operator's own accounts on those platforms.</p>
+  <p>No personal data is collected from any third party. This application has no public-facing sign-up, login, or data submission of any kind.</p>
+
+  <h2><span class="num">2.2</span>Where it's stored</h2>
+  <ul>
+    <li>Authentication tokens are stored locally, on the operator's own device.</li>
+    <li>Tokens are never transmitted to any party other than the issuing platform's own API, for the sole purpose of authenticating publish requests.</li>
+  </ul>
+
+  <h2><span class="num">2.3</span>What is not done</h2>
+  <ul>
+    <li>No data is sold, rented, or shared with advertisers or other third parties.</li>
+    <li>No analytics or tracking scripts run on this policy page beyond what its hosting provider inherently logs.</li>
+    <li>No data is collected from viewers of the published video content itself.</li>
+  </ul>
+
+  <h2><span class="num">2.4</span>Retention &amp; revocation</h2>
+  <p>Stored tokens are retained only as long as needed to operate the application, and can be revoked at any time directly from each platform's own account security settings (for example, Google Account permissions, or TikTok's connected-apps settings) &mdash; independent of this application.</p>
+
+  <h2><span class="num">2.5</span>Contact</h2>
+  <p>Questions about this policy can be sent to the address below.</p>
+
+  <div class="meta-block">
+    <span><b>Operator</b> Terence Lee</span>
+    <span><b>Contact</b> <a href="mailto:pilotter65@gmail.com">pilotter65@gmail.com</a></span>
+  </div>
+</main>
+<footer>TEM Debrief &mdash; aviation safety analysis, decoded.</footer>
+</body>
+</html>
